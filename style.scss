@@ -135,8 +135,9 @@ body {
 	height: 40px; 
 	width: 4px; 
 	border-radius:20px 20px 0 0;
+	animation:melting 5s infinite ease;
 	margin:{
-		top:-7.6rem;
+		top:-5.6rem;
 		left:3.9rem;
 	}
 	&:before, 
@@ -160,5 +161,10 @@ body {
 		margin:{
 			left:-1.5rem;
 		}
+	}
+}
+@keyframes melting{
+	100%{
+		transform: translateY(-20px);
 	}
 }
