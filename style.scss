@@ -1,0 +1,63 @@
+$face: #555;
+$cheese: #FCC61A;
+$pep: #DC644A;
+body {
+  background: #EBD09B;
+}
+
+.container {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  left: 380px;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 100px;
+  transform: rotate(180deg) scale(2.5);
+}
+
+.crust {
+  z-index: 300;
+  width: 0;
+  height: 0;
+  border:{
+  	left: 50px solid transparent;
+  	right: 50px solid transparent;
+  	bottom: 100px solid #D6934D;
+  	radius: 0 0 100% 100%;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+  }
+  &:before{
+  	z-index:200;
+  	margin:{
+  		left:-2.6rem;
+  		top:-1rem;
+  	}
+  	border:{
+  		left: 43px solid transparent;
+  		right:43px solid transparent;
+  		bottom:100px solid $cheese;
+  		radius: 0 0 80% 80%;
+  	}
+  }
+  &:after{
+  	z-index:100;
+  	margin:{
+  		top:.6rem;
+  		left: -3rem;
+  	}
+  	border:{
+  		left: 48px solid transparent; 
+  		right: 48px solid transparent;
+  		bottom: 80px solid #A82B2B;
+  		radius: 0 0 100% 100%;
+  	}
+  }
+}
