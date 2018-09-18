@@ -96,4 +96,27 @@ body {
   margin-top: -.6rem;
   margin-left: .6rem; }
 
+.melt {
+  position: absolute;
+  background: #FCC61A;
+  height: 40px;
+  width: 4px;
+  border-radius: 20px 20px 0 0;
+  margin-top: -7.6rem;
+  margin-left: 3.9rem; }
+  .melt:before, .melt:after {
+    content: '';
+    position: absolute;
+    background: #FCC61A;
+    border-radius: 20px 20px 0 0; }
+  .melt:before {
+    width: 4px;
+    height: 40px;
+    margin-left: -.86rem;
+    margin-top: -1rem; }
+  .melt:after {
+    width: 4px;
+    height: 40px;
+    margin-left: -1.5rem; }
+
 /*# sourceMappingURL=style.css.map */

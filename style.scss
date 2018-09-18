@@ -129,3 +129,36 @@ body {
 		left:.6rem;
 	}
 }
+.melt{
+	position: absolute;
+	background: $cheese; 
+	height: 40px; 
+	width: 4px; 
+	border-radius:20px 20px 0 0;
+	margin:{
+		top:-7.6rem;
+		left:3.9rem;
+	}
+	&:before, 
+	&:after{
+		content:'';
+		position:absolute;
+		background:$cheese;
+		border-radius:20px 20px 0 0;
+	}
+	&:before{
+		width:4px;
+		height:40px;
+		margin:{
+			left:-.86rem;
+			top:-1rem;
+		}
+	}
+	&:after{
+		width:4px;
+		height:40px;
+		margin:{
+			left:-1.5rem;
+		}
+	}
+}
